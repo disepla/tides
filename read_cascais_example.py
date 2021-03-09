@@ -5,7 +5,7 @@ Created on Tue Mar  9 09:34:05 2021
 @author: Rui
 """
 import pandas as pd
-import numpy as np
+
 
 df_dgt = pd.read_pickle('cascais.pkl')
 df_dgt['NM'].plot()
@@ -26,7 +26,7 @@ dados = df_dgt.loc[dates]
 #%% ler ano
 
 
-dados = df_dgt.loc['2010-12']
+dados = df_dgt.loc['2010']
 dados['NM'].plot()
 
 
